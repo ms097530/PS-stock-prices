@@ -56,7 +56,12 @@
   border-collapse: collapse;
 }
 
-.StockPreview tr
+.Dashboard tr
 {
   border-bottom: 1px solid black;
+}
+
+.Dashboard td
+{
+  padding: 0.5rem 1rem;
 }

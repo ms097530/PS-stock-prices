@@ -1,23 +1,23 @@
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 export default function StockPreview({ stock })
 {
+    const navigate = useNavigate()
+
+    const handleClick = () =>
+    {
+        navigate(`/stocks/${stock.symbol}`)
+    }
     return (
-        <tr>
+        <tr className='StockPreview' onClick={handleClick}>
             <td>
-                {/* <Link to={`/stocks/${stock.symbol}`}> */}
                 {stock.name}
-                {/* </Link> */}
             </td>
             <td>
-                {/* <Link to={`/stocks/${stock.symbol}`}> */}
                 {stock.lastPrice}
-                {/* </Link> */}
             </td>
             <td>
-                {/* <Link to={`/stocks/${stock.symbol}`}> */}
                 {stock.change}
-                {/* </Link> */}
             </td>
         </tr>
     )
