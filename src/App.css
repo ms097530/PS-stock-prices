@@ -51,6 +51,12 @@
   }
 }
 
+.Navbar
+{
+  gap: 1rem;
+  display: flex;
+}
+
 .Dashboard table
 {
   border-collapse: collapse;
@@ -64,4 +70,24 @@
 .Dashboard td
 {
   padding: 0.5rem 1rem;
+}
+
+.StockPreview
+{
+  cursor: pointer;
+}
+
+.StockPreview:hover
+{
+  background-color: rgba(40, 154, 219, 0.25);
+}
+
+.gain
+{
+  color: green;
+}
+
+.loss
+{
+  color: red;
 }
